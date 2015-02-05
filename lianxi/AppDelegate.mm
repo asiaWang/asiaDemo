@@ -37,13 +37,13 @@ BMKMapManager *_mapManger;
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     
     MainViewController *mvc = [[MainViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
     
     SEcondViewController *svc = [[SEcondViewController alloc] init];
-    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:svc];
+//    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:svc];
     
     UITabBarController *tab = [[UITabBarController alloc] init];
-    tab.viewControllers = @[nav,nav2];
+    tab.viewControllers = @[mvc,svc];
     [tab.tabBar setBackgroundImage:[UIImage imageNamed:@"tab-bar.png"]];
     
     

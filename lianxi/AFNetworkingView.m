@@ -9,8 +9,14 @@
 #import "AFNetworkingView.h"
 #import "AFHTTPRequestOperation.h"
 
-@interface AFNetworkingView ()
+typedef NS_ENUM(NSInteger, AFState) {
+    AFStart,
+    AFConnctioning,
+};
 
+@interface AFNetworkingView ()
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UIButton *AFStart;
 @end
 
 @implementation AFNetworkingView
