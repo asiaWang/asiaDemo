@@ -38,7 +38,9 @@ BMKMapManager *_mapManger;
     
     MainViewController *mvc = [[MainViewController alloc] init];
 //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
+    NSLog(@"adsjfkajsfl");
     
+     
     SEcondViewController *svc = [[SEcondViewController alloc] init];
 //    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:svc];
     
